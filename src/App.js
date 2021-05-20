@@ -12,12 +12,13 @@ function App() {
   const [openCreate, setOpenCreacte] = React.useState(false);
   const [edit, setEdit] = React.useState();
   const [description, setDespriction] = React.useState();
-  const [date, setDate] = React.useState([]);
+  const [date, setDate] = React.useState(undefined);
 
 
-  useEffect(async () => {
+  React.useEffect(async () => {
     const json = await fetchGet();
-    setDate(json);
+    console.log(json)
+    setDate(json.data);
   }, []);
 
 
@@ -71,7 +72,7 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {date.map((data) => (
+          {date!== undefined&& date.map((data) => (
             <tr key={data.codigo}>
               <td>{data.codigo}</td>
               <td>{data.name}</td>
