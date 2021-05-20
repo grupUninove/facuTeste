@@ -1,6 +1,6 @@
 export function GET_PRODUCT() {
   return {
-    url: `http://127.0.0.1/PHP_TRABALHO/Src/Controller/ProductController.php`,
+    url: `http://187.35.128.157:71/GLOBAL/Controller/CCPP/Product.php`,
     options: {
       method: 'GET',
       headers: {
@@ -13,7 +13,7 @@ export function GET_PRODUCT() {
 
 export function GET_PRODUCT_CODIGO(body) {
   return {
-    url: `http://127.0.0.1/PHP_TRABALHO/Src/Controller/ProductController.php?codigo=${body}`,
+    url: `http://187.35.128.157:71/GLOBAL/Controller/CCPP/Product.php?codigo=${body}`,
     options: {
       method: 'GET',
       headers: {
@@ -26,7 +26,7 @@ export function GET_PRODUCT_CODIGO(body) {
 
 export function POST_PRODUCT(body) {
   return {
-    url: `http://127.0.0.1/PHP_TRABALHO/Src/Controller/ProductController.php`,
+    url: `http://187.35.128.157:71/GLOBAL/Controller/CCPP/Product.php`,
     options: {
       method: 'POST',
       body: JSON.stringify(body),
@@ -36,7 +36,7 @@ export function POST_PRODUCT(body) {
 
 export function PUT_PRODUCT(body) {
   return {
-    url: `http://127.0.0.1/PHP_TRABALHO/Src/Controller/ProductController.php`,
+    url: `http://187.35.128.157:71/GLOBAL/Controller/CCPP/Product.php`,
     options: {
       method: 'PUT',
       body: JSON.stringify(body),
@@ -46,7 +46,7 @@ export function PUT_PRODUCT(body) {
 
 export function DELETE_PRODUCT(body) {
   return {
-    url: `http://127.0.0.1/PHP_TRABALHO/Src/Controller/ProductController.php`,
+    url: `http://187.35.128.157:71/GLOBAL/Controller/CCPP/Product.php`,
     options: {
       method: 'DELETE',
       body: JSON.stringify(body),
