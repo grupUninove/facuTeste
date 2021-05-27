@@ -25,10 +25,11 @@ function Modal({ setOpenEditar, edit, setDate }) {
       alert(json)
       return;
     }
-    setCodigo(json[0].codigo)
-    setName(json[0].name)
-    setDescription(json[0].description)
-    setPrice(json[0].price)
+    alert(json)
+    setCodigo(json.data[0].codigo)
+    setName(json.data[0].name)
+    setDescription(json.data[0].description)
+    setPrice(json.data[0].price)
   }, []);
   //  console.log(edit)
 
